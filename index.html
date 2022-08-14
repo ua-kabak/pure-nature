@@ -17,6 +17,7 @@
   <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#183e27">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,14 +41,23 @@
             <a class="nav__link" href="#about">
               О нас
             </a>
+            <a class="nav__link nav__link--mobile" href="#about">
+              О нас
+            </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#product">
               Наша продукция
             </a>
+            <a class="nav__link nav__link--mobile" href="#product">
+              Наша продукция
+            </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#contact">
+              Связаться
+            </a>
+            <a class="nav__link nav__link--mobile" href="#contact">
               Связаться
             </a>
           </li>
@@ -56,12 +66,18 @@
         <ul class="social">
           <li class="social__item">
             <a class="social__link" href="#">
-              <img class="social__img" src="images/icons/insta.svg" alt="инстаграм">
+              <svg class="social__img" width="27" height="29">
+                <use xlink:href="images/icons/sprite.svg#insta">
+                </use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <img class="social__img" src="images/icons/telegram.svg" alt="телеграм">
+              <svg class="social__img" width="29" height="22">
+                <use xlink:href="images/icons/sprite.svg#telegram">
+                </use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -97,7 +113,7 @@
     <section class="about" id="about">
       <div class="container">
 
-        <h3 class="title">
+        <h3 class="title wow animate__bounceIn" data-wow-offset="100">
           О нас
           <span>
             About
@@ -105,8 +121,9 @@
         </h3>
 
         <div class="about__content">
-          <img class="about__img" src="images/about-img.jpg" alt="картинка" width="557" height="519">
-          <div class="about__text-box">
+          <img class="about__img wow animate__zoomIn" data-wow-offset="100" src="images/about-img.jpg" alt="картинка" width="557"
+            height="519">
+          <div class="about__text-box wow animate__zoomIn" data-wow-offset="100">
             <div class="about__text">
               <p>
                 Современная экологическая ситуация, сумасшедший ритм жизни, а также недостаток витаминов и минералов —
@@ -142,7 +159,7 @@
     <section class="product" id="product">
       <div class="container">
 
-        <h3 class="title title--product">
+        <h3 class="title title--product wow animate__bounceIn" data-wow-offset="100">
           Наша продукция
           <span>
             Our product
@@ -150,7 +167,7 @@
         </h3>
 
         <div class="product__content">
-          <div class="product__text-box">
+          <div class="product__text-box wow animate__zoomIn" data-wow-offset="100">
             <div class="product__text">
               <p>
                 Украинская натуральная косметика Pure Nature производится на основе экологически чистого сырья. В
@@ -212,7 +229,8 @@
 
           </div>
 
-          <img class="product__img" src="images/product-img.jpg" alt="картинка" width="618" height="672">
+          <img class="product__img wow animate__zoomIn" data-wow-offset="100" src="images/product-img.jpg" alt="картинка" width="618"
+            height="672">
         </div>
 
       </div>
@@ -221,7 +239,7 @@
     <section class="contact" id="contact">
       <div class="container">
 
-        <h3 class="title">
+        <h3 class="title wow animate__bounceIn" data-wow-offset="100">
           Свяжитесь с нами
           <span>
             Contact us
@@ -229,7 +247,7 @@
         </h3>
 
         <div class="contact__content">
-          <form class="contact__form" action="#">
+          <form class="contact__form wow animate__zoomIn" data-wow-offset="100" action="#">
             <label class="contact__label" for="email">
               Email:
               <input class="contact__input" type="email" id="email" placeholder="email@example.com" required>
@@ -239,7 +257,7 @@
             </button>
           </form>
 
-          <div class="contact__info">
+          <div class="contact__info wow animate__zoomIn" data-wow-offset="100">
             <p class="contact__text">
               Заполните форму для получения дополнительной информации
             </p>
@@ -250,7 +268,7 @@
               <a class="contact__tel" href="tel:+380999999999">
                 +380 (99) 999 99 99
               </a>
-              <a class="contact__email" href="email:purenature@example.com">
+              <a class="contact__email" href="mailto:purenature@example.com">
                 purenature@example.com
               </a>
             </address>
@@ -274,17 +292,17 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#about">
                 О нас
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#product">
                 Наша продукция
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
+              <a class="nav__link" href="#contact">
                 Связаться
               </a>
             </li>
@@ -293,12 +311,18 @@
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="#">
-                <img class="social__img" src="images/icons/insta.svg" alt="инстаграм">
+                <svg class="social__img" width="27" height="29">
+                  <use xlink:href="images/icons/sprite.svg#insta">
+                  </use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#">
-                <img class="social__img" src="images/icons/telegram.svg" alt="телеграм">
+                <svg class="social__img" width="29" height="22">
+                  <use xlink:href="images/icons/sprite.svg#telegram">
+                  </use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -314,6 +338,7 @@
     </div>
   </footer>
 
+  <script src="js/wow.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
